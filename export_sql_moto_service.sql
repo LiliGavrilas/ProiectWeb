@@ -386,6 +386,29 @@ INSERT INTO `users` (`user_name`, `id_user`, `email`, `phone`, `password`, `type
 ('liliana', 3, 'liliana@yahoo.com', '0751231234', '1234', 0),
 ('adina', 4, 'adina@hotmail.com', '0761231234', '1234', 0);
 
+CREATE TABLE `programari` (
+`id` int(30) NOT NULL  ,
+`nume_client` varchar(200) NOT NULL,
+`nr_contact` int(20) DEFAULT NULL,
+`email` varchar(64) DEFAULT NULL,
+`descriere` text NOT NULL,
+`status` tinyint(2) NOT NULL,
+`marca` varchar(255) DEFAULT NULL,
+`nr_inregistrare` text DEFAULT NULL,
+`model` varchar(255) DEFAULT NULL,
+`data_creare` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `programari`
+    ADD PRIMARY KEY (`id`);
+ALTER TABLE `programari` CHANGE `id` `id` INT(30) NOT NULL AUTO_INCREMENT;
+
+
+INSERT INTO `programari` (`id`, `nume_client`, `nr_contact`, `email`, `descriere`, `status`, `marca`, `nr_inregistrare`, `model`, `data_creare`) VALUES
+         ('', 'TESSTTT', 15525455, 'lili@test.com', 'Probleme virare', 3, 'asd', '15hg222', 'gfs', '2022-04-09 12:38:51'),
+         ('', 'Lili Test', 123456789, 'test@test.com', 'Probleme motorhhh', 0, 'Dacia', 'b123ddf', 'Logan', '2022-04-05 01:31:03'),
+         ('', 'Test', 234381123, 'test.lili', 'Fum negru la accelerare', 1, 'Audi', 'bc12drt', 'A6', '2022-04-05 01:41:58');
+
 --
 -- Indexuri pentru tabele eliminate
 --

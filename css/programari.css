@@ -1,0 +1,342 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+
+/* curatam intai elementele de decoratiuni default */
+
+body {
+    background-image: url("../images/back.jpg");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    padding: 1em;
+    height: 2em;
+    box-shadow: 0 0 2px black;
+    /*linie umbra jos heder pe x,y  cu raza de estompare*/
+    background-color: #457b9d;
+}
+
+
+/* scoatem partea de albastru de la butoane */
+
+a {
+    color: inherit;
+}
+
+
+/* dimensiunea logo imagine */
+
+.logo img {
+    width: 2em;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header_icon_logo {
+    display: none;
+}
+
+header ul li {
+    /* width: calc(16% - 2px); */ /*6 butoane */
+    width: calc(19% - 2px);/*5 butoane */
+    float: left;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    /* background-color:rgb(41, 107, 21) ; */
+    margin-right: 2px;
+    z-index: 9999;
+    /* facem meniul suprapus peste toate celelalte elemente cand coboara. Fara astea doua devine transparent sau este suprascris de alte elemente din html */
+    /* ??? */
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    user-select: none;
+}
+
+header ul li a:hover {
+    opacity: 0.8;
+    color: #a8dadc;
+    transform: scale(1.2);
+}
+
+header ul li ul li {
+    display: none;
+    width: 100%;
+}
+
+header ul li:hover ul li {
+    display: block;
+    background-color: #457b9d;
+    color: #a8dadc;
+    transform: scale(1.2);
+}
+
+footer {
+    box-shadow: 0 0 3px black;
+    /*linie umbra jos heder pe x,y  cu raza de estompare*/
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.card-header {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 12px 20px;
+}
+.card-body {
+    padding: 20px;
+}
+table th{
+    text-align: center;
+}
+table td{
+    text-align: center;
+}
+
+.description {
+    font-size: smaller;
+    color: #000000cf;
+    font-style: italic;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 0.25rem;
+}
+.accept{
+    color: #ffffff;
+    background-color: #007bff;
+}
+.on-progress{
+    color: #ffffff;
+    background-color: #6c757d;
+}
+.completed{
+    color: #212529;
+    background-color: #28a745;
+}
+.rejected{
+    color: #ffffff;
+    background-color: #e63946;
+}
+.waiting{
+    color: #ffffff;
+    background-color: #6c757d;
+}
+a {
+    text-decoration: none;
+}
+.fa{
+    color: #007bff;
+}
+.row {
+    display: flex;
+    margin-left: 20px;
+    width: 90%;
+
+}
+.col-principaly{
+    padding-top: 50px;
+
+}
+.col-principaly_edit{
+    padding-top: 20px;
+}
+.col, .col1, .col2{
+    position: relative;
+    width: 100%;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+
+.sub-col {
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    background-color: #fff;
+    border-left: 5px solid #e9ecef;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left-color: #117a8b;
+}
+.content-header {
+    padding: 15px 8px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 5px 5px 5px 5px;
+}
+.content-header h1{
+    font-size: 1.8rem;
+    border-color: #007bff!important;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+dt {
+    font-weight: 700;
+}
+dd {
+    margin-bottom: 8px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+b, strong {
+    font-weight: bolder;
+}
+button, input {
+    overflow: visible;
+}
+button, input, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.form-control {
+    width: 90%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.form-control-date {
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.button {
+    border-top: 1px solid #dee2e6!important;
+    border-color: #17a2b8!important;
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    justify-content: center!important;
+    display: flex!important;
+
+}
+.save{
+
+    background: #007bff linear-gradient(180deg,#268fff,#007bff) repeat-x!important;
+    color: #fff;
+    margin-left: 0.5rem!important;
+    margin-right: 0.5rem!important;
+}
+.btn{
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.close{
+    background: #6c757d linear-gradient(180deg,#828a91,#6c757d) repeat-x!important;
+    color: #fff;
+    margin-left: 0.5rem!important;
+    margin-right: 0.5rem!important;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    background-color: transparent;
+}
+table {
+    border-collapse: collapse;
+}
+.table-raport td, .table-raport th{
+    padding: 3px !important;
+    border: 1px solid #ced4da;
+
+}
+h3{
+    text-align: center !important;
+    font-size: 1.75rem;
+}
+p{
+    text-align: center !important;
+
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+.row1 {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 280px){
+    .row {
+        display: block;
+        margin-left: 0px;
+    }
+}
+@media (min-width: 280px) and (max-width:360px){
+    .row {
+        margin-left: 0px;
+    }
+}
+@media (max-width:450px){
+    .form-control{
+        width: 80%;
+    }
+}
